@@ -262,7 +262,7 @@ select {
     height: 24px;
     background-size: contain;
     margin-right: 10px;
-    background: url('assets/location2.svg') no-repeat 10px center;
+    /* background: url('assets/location2.svg') no-repeat 10px center; */
 }
 
 .detail-icon2 {
@@ -402,3 +402,9 @@ select {
     flex-direction: column;
     /* Sắp xếp các thông tin theo chiều dọc */
 }
+
+.vertical-line {
+    border-left: 2px solid black;
+    height: 15px; 
+    margin-left: 10px;
+  }
