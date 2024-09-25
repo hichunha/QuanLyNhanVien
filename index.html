@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recommend & Chat</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
 </head>
 
 <body>
@@ -13,7 +14,6 @@
         <div class="container-search">
             <div class="search-input">
                 <input type="text" placeholder="Looking for job seeker" class="search-input-field" />
-
                 <select class="location-select">
                     <option value="" disabled selected>Location</option>
                     <option value="ha-noi">Hà Nội</option>
@@ -82,35 +82,67 @@
 
                                 const detailsPart1 = document.createElement('div');
                                 detailsPart1.classList.add('detail-part');
+
                                 // location
                                 const icon1 = document.createElement('div');
-                                icon1.classList.add('detail-icon1');
+                                // icon1.id = 'icon-container';
+
+                                const iconElement = document.createElement('i');
+                                iconElement.className = 'fi fi-rr-marker detail-icon1';
+                                // iconElement.style.fontSize = '24px';
+                                // iconElement.style.color = 'black';
+
+                                icon1.appendChild(iconElement);
+
+                                document.body.appendChild(icon1);
+
 
                                 const text1 = document.createElement('span');
                                 text1.textContent = `Metro Manila, 1100, Philippines `;
 
+                                const verticalLine1 = document.createElement('span');
+                                verticalLine1.className = 'vertical-line';
+
                                 detailsPart1.appendChild(icon1);
                                 detailsPart1.appendChild(text1);
+                                detailsPart1.appendChild(verticalLine1);
+                                
 
                                 // Exp
                                 const detailsPart2 = document.createElement('div');
                                 detailsPart2.classList.add('detail-part');
 
                                 const icon2 = document.createElement('div');
-                                icon2.classList.add('detail-icon2');
+                                //icon2.classList.add('detail-icon2');
 
+                                const iconElement2 = document.createElement('i');
+                                iconElement2.className = 'fi fi-rr-briefcase';
+                                iconElement2.style = 'margin: 5px';
+
+                                icon2.appendChild(iconElement2);
+                                
                                 const text2 = document.createElement('span');
                                 text2.textContent = `3 years`;
 
+                                const verticalLine2 = document.createElement('span');
+                                verticalLine2.className = 'vertical-line';
+
                                 detailsPart2.appendChild(icon2);
                                 detailsPart2.appendChild(text2);
+                                detailsPart2.appendChild(verticalLine2);
 
                                 // Wage
                                 const detailsPart3 = document.createElement('div');
                                 detailsPart3.classList.add('detail-part');
 
                                 const icon3 = document.createElement('div');
-                                icon3.classList.add('detail-icon3');
+                                //icon3.classList.add('detail-icon3');
+
+                                const iconElement3 = document.createElement('i');
+                                iconElement3.className = 'fi fi-rr-usd-circle';
+                                iconElement3.style = 'margin: 5px';
+
+                                icon3.appendChild(iconElement3);
 
                                 const text3 = document.createElement('span');
                                 text3.textContent = `$1100`;
